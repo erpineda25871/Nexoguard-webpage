@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>White-Label Network &amp; Security Engineering for MSPs | Nexoguard</title>
+  <meta name="description" content="CCIE- and JNCIE-certified nearshore engineers on Central Time. Tier 3/4 network, data center, and security work, delivered under your MSP brand.">
+  <link rel="canonical" href="https://nexoguard.net/">
+
+  <!-- Social sharing preview -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nexoguard">
+  <meta property="og:title" content="Your Tier 3/4 engineering bench, without the local payroll | Nexoguard">
+  <meta property="og:description" content="White-label network and security engineering for MSPs. CCIE- and JNCIE-certified engineers, on Central Time.">
+  <meta property="og:url" content="https://nexoguard.net/">
+  <meta property="og:image" content="https://nexoguard.net/assets/img/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Nexoguard",
+    "url": "https://nexoguard.net/",
+    "email": "sales@nexoguard.com",
+    "description": "White-label network and security engineering for managed service providers, delivered by certified nearshore engineers.",
+    "areaServed": "US",
+    "address": { "@type": "PostalAddress", "addressCountry": "SV" }
+  }
+  </script>
+</head>
+<body>
+
+<!-- Icon library (used with <svg><use href="#i-name"/></svg>) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2 4 5v6c0 5 3.4 9.6 8 11 4.6-1.4 8-6 8-11V5l-8-3Zm0 2.2V19.8C8.6 18.5 6 14.8 6 11V6.4l6-2.2Z"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="currentColor" opacity=".15"/><path d="m7.5 12.3 3 3 6-6.3" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-net" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="9" y="2.5" width="6" height="5" rx="1"/><rect x="2.5" y="16.5" width="6" height="5" rx="1"/><rect x="15.5" y="16.5" width="6" height="5" rx="1"/><path d="M12 7.5V12M5.5 16.5V12h13v4.5"/></g></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 13a8 8 0 0 1 16 0"/><rect x="3" y="13" width="4" height="7" rx="1.5"/><rect x="17" y="13" width="4" height="7" rx="1.5"/></g></symbol>
+    <symbol id="i-server" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3.5" width="18" height="7" rx="1.6"/><rect x="3" y="13.5" width="18" height="7" rx="1.6"/></g><circle cx="7" cy="7" r="1.2" fill="currentColor"/><circle cx="7" cy="17" r="1.2" fill="currentColor"/></symbol>
+    <symbol id="i-k8s" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M12 2.5 20.5 7v10L12 21.5 3.5 17V7Z"/><circle cx="12" cy="12" r="3"/><path d="M12 2.5V9M12 15v6.5M3.5 7 9.4 10.5M14.6 13.5l5.9 3.5M20.5 7l-5.9 3.5M9.4 13.5 3.5 17"/></g></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2.5 4.5 5.5v5.7c0 4.6 3.1 8.6 7.5 10.3 4.4-1.7 7.5-5.7 7.5-10.3V5.5Z"/><rect x="9" y="10.5" width="6" height="5" rx="1"/><path d="M10.2 10.5V9a1.8 1.8 0 0 1 3.6 0v1.5"/></g></symbol>
+    <symbol id="i-cost" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="2.5" y="7" width="15" height="10" rx="1.5"/><circle cx="10" cy="12" r="2.2"/><path d="m14 5 3.5-2.5L21.5 6M17.5 2.5V9"/></g></symbol>
+    <symbol id="i-block" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="3" y="3" width="7" height="7" rx="1.2"/><rect x="14" y="3" width="7" height="7" rx="1.2"/><rect x="3" y="14" width="7" height="7" rx="1.2"/><path d="M17.5 14v7M14 17.5h7"/></g></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9.5"/><path d="M2.5 12h19M12 2.5c3 3.2 3 15.8 0 19M12 2.5c-3 3.2-3 15.8 0 19"/></g></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></g></symbol>
+    <symbol id="i-award" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="m8.5 14-1.5 7.5L12 19l5 2.5-1.5-7.5"/></g></symbol>
+    <symbol id="i-hours" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M3.5 12a8.5 8.5 0 1 0 2.5-6"/><path d="M3 3.5V8h4.5M12 8v4.5l3 1.8"/></g></symbol>
+    <symbol id="i-proj" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="3" y="3" width="7" height="6" rx="1.2"/><rect x="14" y="15" width="7" height="6" rx="1.2"/><path d="M6.5 9v3.5a2 2 0 0 0 2 2h9V15"/></g></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="10" cy="8" r="4"/><path d="M2.5 21c.8-4 3.8-6 7.5-6s6.7 2 7.5 6M19 7v6M16 10h6"/></g></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  </defs>
+</svg>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- ============ HEADER / NAVIGATION ============ -->
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="logo" href="#top" aria-label="Nexoguard home">
+      <svg aria-hidden="true"><use href="#i-shield"/></svg>NEXOGUARD
+    </a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="menu" aria-label="Open menu">
+      <svg aria-hidden="true"><use href="#i-menu"/></svg>
+    </button>
+    <nav id="menu" class="links" aria-label="Main">
+      <a href="#capabilities">Capabilities</a>
+      <a href="#models">Engagement Models</a>
+      <a href="#about">About</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact" class="btn btn-primary btn-sm">Book a consult</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="pill-dark"><svg aria-hidden="true"><use href="#i-shield"/></svg>White-label engineering for MSPs</span>
+      <h1>Your Tier 3/4 engineering bench, without the US payroll.</h1>
+      <p class="lead">Nexoguard gives MSPs on-demand access to CCIE- and JNCIE-certified engineers. We work on Central Time and deliver 100% under your brand. Take on the complex network, collaboration, and security projects you've been turning down, and keep the margin.</p>
+      <div class="ctas">
+        <a class="btn btn-primary" href="#contact">Book a 20-minute bench consult <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <a class="btn btn-ghost" href="#models">See engagement models</a>
+      </div>
+      <p class="micro">Tell us about one stalled project. We'll show you how we'd staff it.</p>
+      <ul class="chips">
+        <li><svg aria-hidden="true"><use href="#i-award"/></svg>CCIE &amp; JNCIE certified</li>
+        <li><svg aria-hidden="true"><use href="#i-clock"/></svg>Central Time (UTC-6)</li>
+        <li><svg aria-hidden="true"><use href="#i-shield"/></svg>100% white-label</li>
+        <li><svg aria-hidden="true"><use href="#i-block"/></svg>Hours · Projects · Dedicated</li>
+      </ul>
+    </div>
+
+    <figure class="ticket-wrap">
+      <div class="ticket" role="img" aria-label="Example: an escalation ticket resolved and signed under the MSP's own brand">
+        <div class="ticket-top"><span class="ticket-brand"><i></i>YourMSP Service Desk</span><span>Ticket #48213</span></div>
+        <h3>Branch SD-WAN tunnels flapping after ISP change</h3>
+        <p class="ticket-meta">Client: Regional healthcare group · Priority: High</p>
+        <ol class="timeline">
+          <li>Tier 1 triage complete<small>Your team · 08:12 CST</small></li>
+          <li>Escalated to Network Engineering (Tier 3)<small>Picked up · 08:40 CST</small></li>
+          <li>Root cause: MTU mismatch on new circuit; policy updated, tunnels stable<small>Resolved · 10:05 CST</small></li>
+        </ol>
+        <p class="sig">Signed: <b>Senior Network Engineer, YourMSP</b><br>The engineer is Nexoguard's. The brand is yours.</p>
+      </div>
+      <figcaption>Illustration: how a white-label escalation looks to your client.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ============ THE CHALLENGE ============ -->
+<section class="section light">
+  <div class="wrap">
+    <p class="eyebrow">The Challenge</p>
+    <h2 class="h2">Advanced projects shouldn't cost you your margin.</h2>
+    <p class="sub">Your clients want SD-WAN rollouts, data center refreshes, and Zero Trust redesigns. Delivering them takes senior architects you can't keep busy full-time. Hire one, and the salary eats your margin between projects. Don't, and the work stalls in your backlog or goes to a competitor.</p>
+    <div class="grid3">
+      <article class="card"><svg class="ic" aria-hidden="true"><use href="#i-cost"/></svg><h3>Talent cost</h3><p>US-based L3/L4 architects command premium salaries, whether or not they're billable this month.</p></article>
+      <article class="card"><svg class="ic" aria-hidden="true"><use href="#i-server"/></svg><h3>Project bottlenecks</h3><p>Complex implementations wait in the backlog while your team handles day-to-day tickets.</p></article>
+      <article class="card"><svg class="ic" aria-hidden="true"><use href="#i-globe"/></svg><h3>Offshore friction</h3><p>Overnight handoffs and language gaps slow escalations when a client's network is down.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHITE LABEL ============ -->
+<section class="section">
+  <div class="wrap split">
+    <div>
+      <p class="eyebrow">100% White-Label</p>
+      <h2 class="h2">Our engineers. Your brand. Your client.</h2>
+      <p class="sub">We work entirely behind your brand. Our engineers join client calls with your email domain, work tickets in your PSA, and write documentation on your templates. Your clients see your company, and only your company. We never contact, market to, or accept work from your clients directly, and our contracts say so in writing.</p>
+      <!-- EDIT: keep only the commitments your contracts actually include -->
+      <ul class="checks">
+        <li><svg aria-hidden="true"><use href="#i-check"/></svg>Your email domain, ticketing system, and documentation templates</li>
+        <li><svg aria-hidden="true"><use href="#i-check"/></svg>Mutual NDA and non-solicitation clause in every agreement</li>
+        <li><svg aria-hidden="true"><use href="#i-check"/></svg>Access only through accounts you create and can revoke, with MFA</li>
+        <li><svg aria-hidden="true"><use href="#i-check"/></svg>Full handoff documentation, so the knowledge stays with your team</li>
+      </ul>
+    </div>
+    <div class="layers" role="img" aria-label="Your client sees only your brand; Nexoguard engineers work behind it">
+      <div class="layer client">
+        <small>What your client sees</small>
+        <div class="pills"><span>Your logo</span><span>Your email domain</span><span>Your ticket portal</span><span>Your reports</span><span>Your invoice</span></div>
+      </div>
+      <p class="behind">▼ behind the scenes ▼</p>
+      <div class="layer us">
+        <small>What powers it</small>
+        <p>Certified Nexoguard engineers, working inside your tools and processes on Central Time, accountable to your team lead.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CAPABILITIES ============ -->
+<section class="section light" id="capabilities">
+  <div class="wrap">
+    <p class="eyebrow">Infrastructure Capabilities</p>
+    <h2 class="h2">The Tier 3/4 work sitting in your backlog.</h2>
+    <p class="sub">We take on the projects and escalations that need senior design and hands-on configuration, from first diagram to final cutover.</p>
+    <div class="grid3">
+      <article class="card"><svg class="ic" aria-hidden="true"><use href="#i-net"/></svg><h3>Enterprise Networking</h3><ul class="bullets"><li>SD-WAN design and migration</li><li>BGP, OSPF, MPLS, and segment routing</li><li>Campus LAN and high-density Wi-Fi</li></ul></article>
+      <article class="card"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg><h3>Collaboration &amp; Voice</h3><ul class="bullets"><li>Cisco collaboration and voice platforms</li><li>Call control and dial plans</li><li>Platform migrations</li></ul></article>
+      <article class="card"><svg class="ic" aria-hidden="true"><use href="#i-server"/></svg><h3>Data Center &amp; Virtualization</h3><ul class="bullets"><li>VMware design and upgrades</li><li>Dell and HPE hyperconverged infrastructure</li><li>Migrations and refreshes</li></ul></article>
+      <article class="card"><svg class="ic" aria-hidden="true"><use href="#i-k8s"/></svg><h3>Kubernetes &amp; DevOps</h3><ul class="bullets"><li>Highly available cluster design</li><li>CI/CD pipelines</li><li>Infrastructure automation</li></ul></article>
+      <article class="card"><svg class="ic" aria-hidden="true"><use href="#i-lock"/></svg><h3>Advanced Security</h3><ul class="bullets"><li>Zero Trust architecture</li><li>Perimeter hardening</li><li>Fortinet and Juniper SRX firewall deployments</li></ul></article>
+      <article class="card card-dark">
+        <div><h3>Not on the list?</h3><p>Tell us what's stuck in your backlog. If it's network, data center, or security engineering, we can likely help.</p></div>
+        <a class="btn btn-primary" href="#contact">Ask an engineer <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </article>
+    </div>
+    <div class="vendors"><span class="label">Technologies</span><span>Cisco</span><span>Juniper</span><span>Fortinet</span><span>VMware</span><span>Dell</span><span>HPE</span><span>Kubernetes</span></div>
+  </div>
+</section>
+
+<!-- ============ CREDENTIALS ============ -->
+<section class="section">
+  <div class="wrap cred">
+    <div>
+      <p class="eyebrow">Technical Backing</p>
+      <h2 class="h2">Expert-level certifications you can verify.</h2>
+      <p class="sub">CCIE and JNCIE are expert-level certifications earned through hands-on lab exams that few network engineers attempt. Our engineers hold them, and we share certification IDs so you can verify each one before a project starts.</p>
+      <p class="also"><span class="label">Also certified</span><span>Juniper JNCIP-SP</span><span>Kubernetes CKA</span></p>
+    </div>
+    <div class="badges">
+      <figure><img src="assets/img/ccie-enterprise.png" alt="Cisco Certified CCIE Enterprise badge" width="160" height="160" loading="lazy"><figcaption>Cisco CCIE Enterprise</figcaption></figure>
+      <figure><img src="assets/img/ccie-collaboration.png" alt="Cisco Certified CCIE Collaboration badge" width="160" height="160" loading="lazy"><figcaption>Cisco CCIE Collaboration</figcaption></figure>
+      <figure><img src="assets/img/jncie-sp.png" alt="Juniper Networks Certified Expert JNCIE-SP badge" width="160" height="160" loading="lazy"><figcaption>Juniper JNCIE-SP</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ENGAGEMENT MODELS ============ -->
+<section class="section light" id="models">
+  <div class="wrap">
+    <p class="eyebrow">Partnership Models</p>
+    <h2 class="h2">Three ways to add senior engineering.</h2>
+    <div class="grid3 models">
+      <article class="card">
+        <svg class="ic" aria-hidden="true"><use href="#i-hours"/></svg>
+        <span class="best">Best for unpredictable escalations</span>
+        <h3>Block Hours</h3>
+        <p>Buy a monthly bank of senior hours for L3/L4 network and security escalations. When an issue goes beyond your team, open a ticket and a certified engineer picks it up.</p>
+        <!-- EDIT: replace [X] with your real response time, and choose "roll over" or "expire" -->
+        <ul class="bullets"><li>Response within 4 business hours</li><li>Billed monthly</li></ul>
+        <a class="more" href="#contact">Explore block hours →</a>
+      </article>
+      <article class="card featured">
+        <span class="tag">Most requested</span>
+        <svg class="ic" aria-hidden="true"><use href="#i-proj"/></svg>
+        <span class="best">Best for deployments you'd turn down</span>
+        <h3>Project Delivery</h3>
+        <p>Fixed-scope, turnkey delivery covering design, configuration, cutover, and documentation, all under your brand. You own the client relationship; we own the engineering.</p>
+        <ul class="bullets"><li>Fixed price, agreed up front</li><li>As-built documentation included</li><li>Delivered under your brand</li></ul>
+        <a class="more" href="#contact">Scope a project →</a>
+      </article>
+      <article class="card">
+        <svg class="ic" aria-hidden="true"><use href="#i-user"/></svg>
+        <span class="best">Best for steady demand</span>
+        <h3>Staff Augmentation</h3>
+        <p>A dedicated, full-time advanced engineer who integrates seamlessly into your workflow, working your queue, joining stand-ups, and using your tools while maximizing your engineering budget.</p>
+        <ul class="bullets"><li>Full-time equivalent (FTE)</li><li>Your tools, your processes</li><li>Monthly rate</li></ul>
+        <a class="more" href="#contact">Add an engineer →</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HOW IT WORKS ============ -->
+<section class="section">
+  <div class="wrap">
+    <p class="eyebrow">How It Works</p>
+    <h2 class="h2">From scoping call to kickoff in days, not months.</h2>
+    <ol class="steps">
+      <li><span class="num">1</span><h3>Scope call</h3><p>Twenty minutes. Share a stalled project or your typical escalations.</p></li>
+      <!-- EDIT: replace [2] with your real proposal turnaround -->
+      <li><span class="num">2</span><h3>Proposal</h3><p>Engineer profile, certifications, approach, and a firm estimate within 2 business days.</p></li>
+      <li><span class="num">3</span><h3>Kickoff under your brand</h3><p>We set up your email, ticketing access, and templates before day one.</p></li>
+      <li><span class="num">4</span><h3>Deliver and document</h3><p>Every engagement ends with as-built documentation your team can support.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ PROOF ============ -->
+<!-- EDIT: fill every [bracket] in this section with real project details before publishing.
+     If you don't have them yet, delete the "results" block at the end of this section. -->
+<section class="section light">
+  <div class="wrap">
+    <p class="eyebrow">Proven Execution</p>
+    <h2 class="h2">Recent projects delivered for MSP partners.</h2>
+    <div class="grid3">
+      <article class="card proj"><svg class="ic" aria-hidden="true"><use href="#i-net"/></svg><h3>Campus Modernization</h3>
+        <p class="k">Situation</p><p>Enterprise client, 500 users across 4 buildings.</p>
+        <p class="k">What we did</p><p>Designed and deployed high-density HPE LAN and Wi-Fi under the partner's brand.</p>
+        <p class="res">Result: Transformed the client's LAN & Wireless environment into a high-performance, secure network deployed in just 3 weeks. By maintaining 100% business continuity with zero service disruption and applying advanced signal planning, the organization gained seamless, reliable connectivity and an instantly fortified security posture.</p></article>
+      <article class="card proj"><svg class="ic" aria-hidden="true"><use href="#i-proj"/></svg><h3>ISP Segment Routing</h3>
+        <p class="k">Situation</p><p>Regional ISP needing better traffic engineering.</p>
+        <p class="k">What we did</p><p>Designed an MPLS segment-routing architecture to optimize traffic paths.</p>
+        <p class="res">Result: MPLS Segment Routing simplifies the network control plane by replacing LDP and RSVP-TE with IGP extensions, delivering sub-50ms convergence via TI-LFA and efficient source-routed traffic engineering.</p></article>
+      <article class="card proj"><svg class="ic" aria-hidden="true"><use href="#i-lock"/></svg><h3>Perimeter Hardening</h3>
+        <p class="k">Situation</p><p>Enterprise edge across 3 sites.</p>
+        <p class="k">What we did</p><p>Implemented Juniper SRX gateways and rebuilt edge security policy.</p>
+        <p class="res">Result: Unify Security policies consolidated, more granular control and protecction</p></article>
+    <!/div>
+    <!div class="results">
+      <!--  <!div class="stat"><b>30%</b><p>Average increase in project margins for MSP partners, measured across 3 projects deployed on  2026 compared with local staffing.</p></div>
+      <!blockquote class="quote"><p>“[Real quote from an MSP owner about speed, quality, or staying invisible to clients.]”</p><footer>— Owner, [size] MSP, [US state]</footer></blockquote>
+    <!/div>
+  <!/div>-->
+</section>
+
+<!-- ============ WHY Central America / ABOUT ============ -->
+<section class="section dark" id="about">
+  <div class="wrap">
+    <p class="eyebrow">Why Central America</p>
+    <h2 class="h2">Nearshore, on your clock.</h2>
+    <p class="sub">Our engineers are based in Central America, on Central Standard Time (UTC-6) all year. That keeps us in step with US Central time through the winter and one hour behind it during daylight saving time, so your team and ours share the full business day.</p>
+    <div class="tiles">
+      <div><b>UTC-6</b><span>Central Standard Time all year. No overnight handoffs.</span></div>
+      <div><b>Full day</b><span>Overlap with US Central, Mountain, and Eastern business hours.</span></div>
+      <div><b>English</b><span>Engineers work and write in fluent English.</span></div>
+      <div><b>USD</b><span>Central America uses the US dollar, so contracts and invoices stay simple.</span></div>
+    <!/div>
+    <!-- EDIT: replace the photo file and the bracketed text with your founder or lead engineer -->
+     <!-- <!div class="team">
+      <!img src="assets/img/founder.svg" alt="[Founder name]" width="72" height="72">
+      <!p><b>[Founder or lead engineer name]</b>, [Title]<br>[N] years in enterprise networking · [Certifications] · [One notable project]</p>
+    <!/div>
+  <!/div>-->
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section" id="faq">
+  <div class="wrap">
+    <p class="eyebrow">MSP FAQ</p>
+    <h2 class="h2">Questions MSP owners ask us first.</h2>
+    <div class="faq">
+      <div>
+        <details><summary>Will my clients know you're involved?</summary><p>No, unless you want them to. We work under your brand, your email domain, and your processes.</p></details>
+        <details><summary>Can your engineers join client calls?</summary><p>Yes, as members of your team.</p></details>
+        <details><summary>How fast do you pick up escalations?</summary><p>Block-hour clients get a response within 4 business hours.</p></details>
+        <details><summary>Can you support after-hours cutovers?</summary><p>Yes, for maintenance windows scheduled in advance.</p></details>
+      </div>
+      <div>
+        <details><summary>How do you protect our clients' environments?</summary><p>NDAs, non-solicitation, access only through accounts you control, and MFA on every account.</p></details>
+        <details><summary>How is pricing structured?</summary><p>Block hours are billed monthly, projects are quoted at a fixed price, and dedicated engineers have a monthly rate. Ask for our rate card.</p></details>
+        <details><summary>Is there a minimum commitment?</summary><p>This can be evaluated per opportunity</p></details>
+        <!details><summary>Will you sign our NDA and MSA?</summary><p>[Your answer.]</p></details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FINAL CTA + CONTACT FORM ============ -->
+<section class="final" id="contact">
+  <div class="wrap final-grid">
+    <div>
+      <span class="pill-dark"><svg aria-hidden="true"><use href="#i-shield"/></svg>Expand your MSP capabilities</span>
+      <h2>Stop turning down the complex projects.</h2>
+      <p>Tell us about one stalled project or a recurring escalation. In 20 minutes, we'll show you how we'd staff it and what it would cost.</p>
+      <p class="mail">Prefer email? <a href="mailto:sales@nexoguard.com">sales@nexoguard.com</a></p>
+    </div>
+
+    <form class="form" action="contact.php" method="post" id="lead-form">
+      <h3>Get your bench proposal</h3>
+      <div class="notice ok" hidden id="form-ok">Thanks. We received your request and will reply within one business day.</div>
+      <div class="notice err" hidden id="form-err">Something went wrong. Please email <a href="mailto:sales@nexoguard.com">sales@nexoguard.com</a> instead.</div>
+
+      <div class="row2">
+        <label>Name<input type="text" name="name" required autocomplete="name"></label>
+        <label>Work email<input type="email" name="email" required autocomplete="email"></label>
+      </div>
+      <div class="row2">
+        <label>MSP name<input type="text" name="company" required autocomplete="organization"></label>
+        <label>Your role<input type="text" name="role" autocomplete="organization-title"></label>
+      </div>
+
+      <fieldset>
+        <legend>What do you need?</legend>
+        <div class="opts">
+          <label><input type="radio" name="need" value="Block hours"><span>Block hours</span></label>
+          <label><input type="radio" name="need" value="Project" checked><span>Project</span></label>
+          <label><input type="radio" name="need" value="Dedicated engineer"><span>Dedicated engineer</span></label>
+          <label><input type="radio" name="need" value="Not sure"><span>Not sure</span></label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Technologies involved</legend>
+        <div class="opts">
+          <label><input type="checkbox" name="tech[]" value="Cisco"><span>Cisco</span></label>
+          <label><input type="checkbox" name="tech[]" value="Juniper"><span>Juniper</span></label>
+          <label><input type="checkbox" name="tech[]" value="Fortinet"><span>Fortinet</span></label>
+          <label><input type="checkbox" name="tech[]" value="VMware"><span>VMware</span></label>
+          <label><input type="checkbox" name="tech[]" value="Dell/HPE"><span>Dell/HPE</span></label>
+          <label><input type="checkbox" name="tech[]" value="Kubernetes"><span>Kubernetes</span></label>
+        </div>
+      </fieldset>
+
+      <label>Short project description and timeline<textarea name="message" rows="3" required></textarea></label>
+
+      <!-- Spam trap: real visitors never see or fill this field -->
+      <label class="hp" aria-hidden="true">Website<input type="text" name="website" tabindex="-1" autocomplete="off"></label>
+
+      <button class="btn btn-dark" type="submit">Get my bench proposal <svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
+      <p class="note">We reply within one business day. Every inquiry stays confidential.</p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <a class="logo" href="#top"><svg aria-hidden="true"><use href="#i-shield"/></svg>NEXOGUARD</a>
+        <p class="tagline">White-label network and security engineering for MSPs.</p>
+        <!-- EDIT: replace # with your LinkedIn company page URL -->
+        <a class="social" href="#" aria-label="Nexoguard on LinkedIn">in</a>
+      </div>
+      <div><h4>Company</h4><ul><li><a href="#capabilities">Capabilities</a></li><li><a href="#models">Engagement Models</a></li><li><a href="#about">About</a></li><li><a href="#contact">Contact</a></li></ul></div>
+      <div><h4>Resources</h4><ul><li><a href="assets/Nexoguard-MSP-Partner-Overview.pdf" target="_blank" rel="noopener">MSP partner overview (PDF)</a></li><li><a href="#faq">FAQ</a></li></ul></div>
+      <!-- EDIT: add your phone and address -->
+      <div><h4>Contact</h4><ul><li><a href="mailto:sales@nexoguard.com">sales@nexoguard.com</a></li><li>+503 77460902</li><li></li></ul></div>
+    </div>
+    <div class="bottom"><span>© <span id="year">2026</span> Nexoguard. All rights reserved.</span></div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
